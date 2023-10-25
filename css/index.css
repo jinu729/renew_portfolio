@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+/* font-family: 'Nanum Gothic', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a:link, a:visited{
+    text-decoration: none;
+    color: white;
+}
+.wrap{
+    width: 100%;
+    min-width: 1280px;
+    height: 100%;
+    position: relative;
+}
+.wrap .page{
+    width: 100%;
+    height: 100%;
+    min-width: 1280px;
+    background: url(https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683_1280.png) center/cover no-repeat;
+}
+
+.page .main_home{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+/* 상단바 */
+.main_home .main_header{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(85, 89, 133, 0.7);
+    position: fixed;
+    z-index: 999;
+}
+.main_header .main_gnb{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main_header .main_gnb .main_logo{
+    width: 5%;
+    height: 40px;
+    display: flex;
+}
+.main_logo img{
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+.main_header .main_gnb .main_menu{
+    position: relative;
+    width: 75%;
+    height: 100%;
+}
+.main_menu .menu_gnb{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main_menu .menu_gnb .menu_list{
+    width: 6%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400;
+}
+.main_header .main_gnb .main_icon{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+}
+.main_icon .icon_gnb{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.icon_gnb .icon_list{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+}
+.icon_gnb .icon_list:nth-child(3){
+    width: 35%;
+    margin-left: 3%;
+}
+.icon_gnb .icon_list img{
+    width: 35px;
+    height: 35px;
+    margin: auto;
+}
+.icon_gnb .icon_date{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 40px;
+}
+
+/* 메인 화면 */
+.main_home .main_section{
+    position: relative;
+    width: 100%;
+    height: 85%;
+    top: 40px;
+}
+.main_home .main_section .main_view{
+    text-align: center;
+    font-size: 100px;
+    font-weight: 800;
+    color: #f78a80;
+    padding-top: 350px;
+}
+
+
+/* 하단바 */
+.main_home .main_footer{
+    /* position: relative; */
+    position: fixed;
+    width: 100%;
+    height: 100px;    
+    bottom: 10px;
+    overflow: hidden;
+    z-index: 9999;
+}
+.main_footer .dock{
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    border-radius: 25px;
+    background-color: rgba(122, 122, 122, 0.74);
+    /* margin: auto; */
+    left: 50%;
+    /* bottom: -100%; */
+    transform: translateX(-50%);
+}
+.dock .dock_icon{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.dock .dock_icon .dc_icon{
+    display: flex;
+    flex-wrap: wrap;
+}
+.dc_icon .icon_menu{
+    width: 16.66%;
+    height: 100%;
+    text-align: center;
+    line-height: 140px; 
+}
+.icon_menu img{
+    opacity: 1;
+    border-radius: 8px;
+}
+
+
+/* page */
+.page .home, .plan, .about, .skill, .work, .contact{
+    position: relative;
+    width: 96%;
+    height: 95%;
+    margin: auto;
+    top: 25px;
+}
+.main_page{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 16px;
+}
+.main_page .header{
+    width: 100%;
+    height: 50px;
+    min-width: 1280px;
+    background-color: #332626;
+    border-radius: 20px 20px 0 0 ;
+}
+.header .header_top{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    height: 50px;
+}
+.header .header_top .top{
+    flex: 5%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 2%;
+}
+.header .header_top .top .color_dot{
+    flex: 1;
+    display: flex;
+}
+.header_top .top .red{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: auto;
+    background-color: red;
+}
+.header_top .top .yellow{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: auto;
+    background-color: yellow;
+}
+.header_top .top .green{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: auto;
+    background-color: green;
+}
+
+.header .header_top .name{
+    position: relative;
+    height: 50px;
+    color: white;
+    margin: 0 40%;
+    line-height: 45px; 
+    font-size: 30px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+}
+.header .header_top .logo_img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: auto;
+    margin-left: 4%;
+    display: flex;
+}
+.header .header_top .logo{
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+.main_page .gnb{
+    width: 100%;
+    height: 50px;
+    min-width: 1280px;
+    background-color: #191919;
+}
+.gnb .gnb_wrap{
+    position: relative;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.gnb .gnb_wrap .bar_img{
+    flex: 0;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-left: 1%;
+}
+#bar{
+    width: 50px;
+    height: 30px;
+    margin: auto;
+}
+.gnb .gnb_wrap .gnb_ul{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1.5%;
+}
+.gnb_wrap .gnb_ul .gnb_menu{
+    flex: 1;
+    margin: auto;
+    text-align: center;
+}
+.main_page .section{
+    width: 100%;
+    height: 770px;
+    min-width: 1280px;
+    background-color: #333333;
+} 
+
+
+/* plan */
+#page1 .main_page .section{
+    width: 100%;
+    height: 770px;
+    min-width: 1280px;
+    background-color: #333333;
+} 
+
+#page1 .section .plan_title{
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 100px;
+    color: white;
+}
+#page1 .section .plan_box{
+    width: 100%;
+    height: 85%;
+}
+#page1 .section .plan_box ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#page1 .section .plan_box li{
+    width: 33.2%;
+    height: 50%;
+    text-align: center;
+}
+#page1 .section .plan_box .subtitle{
+    color: white;
+    font-size: 30px;
+    line-height: 40px;
+}
+#page1 .section .plan_box .sub_content{
+    width: 100%;
+    height: 82%;
+    opacity: 0;
+    transition: all 0.9s ease-in-out;
+}
+#page1 .section .plan_box .sub_content .sub_list{
+    color: white;
+    /* background-color: #4D4D4D; */
+    padding-top: 40px;
+    line-height: 40px;
+    font-size: 20px;
+}
+#page1 .section .plan_box .sub_content:hover{
+    /* background-color: #FFD0D1; */
+    opacity: 100;
+}
+
+/* About */
+#page2 .section{
+    width: 100%;
+    height: 770px; 
+    position: relative;
+}
+#page2 .section .about_box{
+    position: relative;
+    /* left: 10%; */
+}
+#page2 .section .about_box ul{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: 1.3%;
+}
+#page2 .section .about_box .first_img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#page2 .section .about_box img{
+    width: 1200px;
+}
+#page2 .section .about_box .second_img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    height: 721.875px;
+    background-color: #333333;
+    opacity: 0;
+    transition: all 0.8s;
+}
+#page2 .section .about_box .second_img:hover{
+    opacity: 1;
+}
+
+/* Skill */
+#page3 .section{
+    width: 100%;
+    height: 770px;
+    position: relative;
+}
+#page3 .section .skill_box{
+    position: relative;
+    /* top: 50px; */
+    width: 85%;
+    height: 85%;
+    margin: auto;
+}
+#page3 .section .skill_box .skill_title{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 100px;
+    color: white;
+}
+#page3 .section .skill_box .box{
+    width: 100%;
+    height: 80%;
+    padding-top: 5%;
+    margin: auto;
+    /* background-color: white; */
+}
+#page3 .section .skill_box .box ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 95%;
+}
+#page3 .section .skill_box .box li{
+    flex: 1 1 33.3%;
+    height: 50%;
+    text-align: center;
+    position: relative;
+}
+#page3 .section .skill_box .box li img{
+    height: 30%;
+}
+#page3 .section .skill_box .box li p{
+    font-size: 25px;
+    line-height: 30px;
+    color: white;
+}
+#page3 .section .skill_box .box li span{
+    position: absolute;
+    top: 64%;
+    left: 51%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    color: white;
+}
+#page3 .section .skill_box .box li svg{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    width: 20%;
+    transform: translate(-50%,-50%);
+}
+.st0{
+    fill: #575757;
+}
+#page3 .section .skill_box .box .st1{
+    fill:none;
+    stroke:#CFCFCF;
+    stroke-width:16;
+    stroke-linecap:round;
+    stroke-linejoin:bevel;      
+    stroke-dasharray: 295;
+    stroke-dashoffset: 295;
+}
+#page3 .section .skill_box .box .st2{
+    fill:none;
+    stroke:#CFCFCF;
+    stroke-width:16;
+    stroke-linecap:round;
+    stroke-linejoin:bevel;      
+    stroke-dasharray: 336;
+    stroke-dashoffset: 336;
+}
+#page3 .section .skill_box .box .st3{
+    fill:none;
+    stroke:#CFCFCF;
+    stroke-width:16;
+    stroke-linecap:round;
+    stroke-linejoin:bevel;      
+    stroke-dasharray: 378;
+    stroke-dashoffset: 378;
+}
+#page3 .section .skill_box .box .add{
+    animation: ani 3s forwards;
+}
+#page3 .section .skill_box .box .add2{
+    animation: ani2 3s forwards;
+}
+#page3 .section .skill_box .box .add3{
+    animation: ani3 3s forwards;
+}
+
+/* work */
+#page4 .work_title{
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 100px;
+    color: white;
+}
+#page4 .section .left_btn{
+    position: absolute;
+    left: 5%;
+    top: 55%;
+}
+#page4 .section .right_btn{
+    position: absolute;
+    right: 5%;
+    top: 55%;
+}
+#page4 .section p button{
+    background: transparent;
+    cursor: pointer; 
+    border: none;
+}
+
+#page4 .section .work_swiper{
+    width: 79%;
+    height: 70%;
+    margin: 10px auto;
+    overflow: hidden;
+}
+#page4 .section .work_swiper .work_slide{
+    width: 450%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    display: flex;
+}
+#page4 .section .work_swiper .work_slide .work_list{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+#page4 .work_list .list_img{
+    width: 60%;
+    height: 85%;
+    margin: auto;
+    margin-left: 10px;
+}
+#page4 .work_list .list_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+#page4 .work_list .list_txt{
+    width: 35%;
+    height: 80%;
+    margin: auto;
+    margin-left: 10px;
+}
+#page4 .work_list .list_txt .work_txt{
+    color: white;
+    font-size: 30px;
+}
+#page4 .work_list .list_txt .work_content{
+    color: white;
+    font-size: 18px;
+}
+#page4 .work_list .list_txt .site{
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    cursor: pointer; 
+    /* border: solid 1px white; */
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    background: #3E4681;
+    border: none;
+}
+
+
+/* contact */
+#page5 .section .con_middle{
+    width: 35%;
+    height: 30%;
+    position: relative;
+    left: 10%;
+    top: 28%;
+    /* background-color: white; */
+}
+#page5 .section .con_middle h2{
+    color: white;
+    font-size: 80px;
+    font-weight: 800;
+}
+#page5 .section .con_middle p{
+    color: white;
+    font-size: 22px;
+}
+#page5 .section .con_footer{
+    width: 100%;
+    height: 7%;
+    bottom: 2%;
+    position: absolute;
+}
+#page5 .section .con_footer p{
+    text-align: center;
+    color: rgb(177, 177, 177);
+    font-size: 13px;
+}
+
+
+
+
+
+
+
