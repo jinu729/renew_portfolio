@@ -185,8 +185,11 @@ a:link, a:visited{
 .main_page{
     position: relative;
     width: 100%;
-    height: 100%;
-    top: 16px;
+    height: 80%;
+    /* top: 16px; */
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .main_page .header{
     width: 100%;
@@ -197,23 +200,24 @@ a:link, a:visited{
 }
 .header .header_top{
     display: flex;
-    flex-wrap: wrap;
     position: relative;
     height: 50px;
 }
 .header .header_top .top{
-    flex: 5%;
+    width: 100px;
     height: 50px;
-    display: flex;
-    flex-wrap: wrap;
     position: relative;
     left: 2%;
+    
 }
 .header .header_top .top .color_dot{
-    flex: 1;
     display: flex;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
-.header_top .top .red{
+.header_top .top .color_dot .red{
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -237,6 +241,7 @@ a:link, a:visited{
 
 .header .header_top .name{
     position: relative;
+    text-align: center;
     height: 50px;
     color: white;
     margin: 0 40%;
@@ -244,56 +249,7 @@ a:link, a:visited{
     font-size: 30px;
     font-family: 'Nanum Gothic', sans-serif;
     font-weight: 700;
-}
-.header .header_top .logo_img{
-    width: 50px;
-    height: 50px;
-    position: relative;
-    margin: auto;
-    margin-left: 4%;
-    display: flex;
-}
-.header .header_top .logo{
-    width: 40px;
-    height: 40px;
-    margin: auto;
-}
-.main_page .gnb{
-    width: 100%;
-    height: 50px;
-    min-width: 1280px;
-    background-color: #191919;
-}
-.gnb .gnb_wrap{
-    position: relative;
-    width: 95%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-.gnb .gnb_wrap .bar_img{
-    flex: 0;
-    display: flex;
-    width: 50px;
-    height: 50px;
-    margin-left: 1%;
-}
-#bar{
-    width: 50px;
-    height: 30px;
-    margin: auto;
-}
-.gnb .gnb_wrap .gnb_ul{
-    width: 30%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 1.5%;
-}
-.gnb_wrap .gnb_ul .gnb_menu{
-    flex: 1;
-    margin: auto;
-    text-align: center;
+    left: 2%;
 }
 .main_page .section{
     width: 100%;
@@ -310,19 +266,13 @@ a:link, a:visited{
     min-width: 1280px;
     background-color: #333333;
 } 
-
-#page1 .section .plan_title{
-    width: 100%;
-    height: 15%;
-    text-align: center;
-    font-size: 35px;
-    font-weight: 700;
-    line-height: 100px;
-    color: white;
-}
 #page1 .section .plan_box{
     width: 100%;
     height: 85%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 #page1 .section .plan_box ul{
     width: 100%;
@@ -335,27 +285,21 @@ a:link, a:visited{
     height: 50%;
     text-align: center;
 }
-#page1 .section .plan_box .subtitle{
-    color: white;
-    font-size: 30px;
-    line-height: 40px;
+#page1 .section .plan_box .plan_img1{
+    position: absolute;
+    transition: all 0.8s;
+    width: 27.4%;
+    height: 46%;
 }
-#page1 .section .plan_box .sub_content{
-    width: 100%;
-    height: 82%;
+#page1 .section .plan_box .plan_img2{
+    width: 82.3%;
+    height: 92%;
+}
+#page1 .section .plan_box .plan_img1:hover{
     opacity: 0;
-    transition: all 0.9s ease-in-out;
 }
-#page1 .section .plan_box .sub_content .sub_list{
-    color: white;
-    /* background-color: #4D4D4D; */
-    padding-top: 40px;
-    line-height: 40px;
-    font-size: 20px;
-}
-#page1 .section .plan_box .sub_content:hover{
-    /* background-color: #FFD0D1; */
-    opacity: 100;
+#page1 .section .plan_box img{
+    size: 100%;
 }
 
 /* About */
@@ -366,7 +310,6 @@ a:link, a:visited{
 }
 #page2 .section .about_box{
     position: relative;
-    /* left: 10%; */
 }
 #page2 .section .about_box ul{
     width: 100%;
@@ -390,7 +333,7 @@ a:link, a:visited{
     height: 721.875px;
     background-color: #333333;
     opacity: 0;
-    transition: all 0.8s;
+    transition: all 0.5s ease-in-out;
 }
 #page2 .section .about_box .second_img:hover{
     opacity: 1;
@@ -404,7 +347,6 @@ a:link, a:visited{
 }
 #page3 .section .skill_box{
     position: relative;
-    /* top: 50px; */
     width: 85%;
     height: 85%;
     margin: auto;
@@ -420,10 +362,13 @@ a:link, a:visited{
 }
 #page3 .section .skill_box .box{
     width: 100%;
-    height: 80%;
+    height: 90%;
     padding-top: 5%;
     margin: auto;
-    /* background-color: white; */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 #page3 .section .skill_box .box ul{
     display: flex;
@@ -444,10 +389,11 @@ a:link, a:visited{
     font-size: 25px;
     line-height: 30px;
     color: white;
+    padding: 20px;
 }
 #page3 .section .skill_box .box li span{
     position: absolute;
-    top: 64%;
+    top: 74%;
     left: 51%;
     transform: translate(-50%,-50%);
     font-size: 25px;
@@ -455,7 +401,7 @@ a:link, a:visited{
 }
 #page3 .section .skill_box .box li svg{
     position: absolute;
-    top: 65%;
+    top: 75%;
     left: 50%;
     width: 20%;
     transform: translate(-50%,-50%);
@@ -501,7 +447,10 @@ a:link, a:visited{
 }
 
 /* work */
-#page4 .work_title{
+#page4 .section{
+    position: relative;
+}
+/* #page4 .work_title{
     width: 100%;
     height: 15%;
     text-align: center;
@@ -509,16 +458,16 @@ a:link, a:visited{
     font-weight: 700;
     line-height: 100px;
     color: white;
-}
+} */
 #page4 .section .left_btn{
     position: absolute;
     left: 5%;
-    top: 55%;
+    top: 45%;
 }
 #page4 .section .right_btn{
     position: absolute;
     right: 5%;
-    top: 55%;
+    top: 45%;
 }
 #page4 .section p button{
     background: transparent;
@@ -529,8 +478,13 @@ a:link, a:visited{
 #page4 .section .work_swiper{
     width: 79%;
     height: 70%;
-    margin: 10px auto;
+    margin: auto;
     overflow: hidden;
+    position: relative;
+    top: 50%;
+    /* left: 40%; */
+    transform: translateY(-50%);
+    /* transform: translate(-50%,-50%); */
 }
 #page4 .section .work_swiper .work_slide{
     width: 450%;
@@ -565,6 +519,9 @@ a:link, a:visited{
 #page4 .work_list .list_txt .work_txt{
     color: white;
     font-size: 30px;
+}
+#page4 .work_txt span{
+    font-size: 20px;
 }
 #page4 .work_list .list_txt .work_content{
     color: white;
@@ -606,7 +563,7 @@ a:link, a:visited{
 #page5 .section .con_footer{
     width: 100%;
     height: 7%;
-    bottom: 2%;
+    bottom: -17%;
     position: absolute;
 }
 #page5 .section .con_footer p{
